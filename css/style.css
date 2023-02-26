@@ -11,21 +11,67 @@ html, body {
 .background__01 {
     width: 100%;
     height: 100%;
-    background-image: url(/images/a.jpg);
+    background: url(/images/a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .background__02 {
     width: 100%;
     height: 100%;
-    background-image: url(/images/b.jpg);
+    background: url(/images/b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .background__03 {
     width: 100%;
     height: 100%;
-    background-image: url(/images/c.jpg);
+    background: url(/images/c.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: url(/images/16.png) ;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.contents {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+.contents__name, .contents__job {
+    font-weight: bold;
+    color: #fff;
+}
+.contents__name {
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+.contents__job {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.contents__lists {
+    font-size: 0;
+}
+.contents__lists > li {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #fff;
+    border-radius: 50%; /* 테두리 동그라미 모양으로 바꾸어주기 */
+}
+.contents__lists  li  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.contents__lists  li:hover a {
+    text-decoration: none;
+    color: plum;
 }
